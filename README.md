@@ -20,7 +20,7 @@ A web application that fetches and summarizes Wikipedia articles using OpenAI's 
 
 1. Clone the repository:
 ```bash
-git clone <repository_url>
+git clone [<repository_url>](https://github.com/baam28/wiki-summary)
 cd wiki_summerize
 ```
 
