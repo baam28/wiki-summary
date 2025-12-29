@@ -110,6 +110,27 @@ Get cache statistics.
 ### DELETE /cache/clear
 Clear all cached summaries.
 
+## Testing
+
+Run the test suite:
+
+```bash
+# Install test dependencies (if not already installed)
+pip install -r requirements.txt
+
+# Run all tests
+pytest
+
+# Run with verbose output
+pytest -v
+
+# Run specific test file
+pytest tests/test_scraper.py
+
+# Run with coverage report
+pytest --cov=backend --cov-report=html
+```
+
 ## Project Structure
 
 ```
@@ -126,7 +147,15 @@ wiki_summerize/
 │   └── rate_limiter.py     # Rate limiting
 ├── frontend/
 │   └── main.py             # Streamlit UI
+├── tests/
+│   ├── test_api.py         # API endpoint tests
+│   ├── test_scraper.py     # Scraper tests
+│   ├── test_summarizer.py  # Summarizer tests
+│   ├── test_cache.py       # Cache tests
+│   ├── test_rate_limiter.py # Rate limiter tests
+│   └── test_chat.py        # Chat tests
 ├── requirements.txt
+├── pytest.ini
 └── README.md
 ```
 
